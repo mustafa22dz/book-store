@@ -20,14 +20,14 @@
         .container {
             background: #1e1e1e;
             padding: 30px;
-            width: 350px;
-            max-width: 90%; 
+            width: 380px;
+            max-width: 95%; 
             border-radius: 20px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.7);
             border: 1px solid #d4af37;
             text-align: center; 
             transition: transform 0.3s ease;
-            margin: 20px 0; /* مساحة إضافية للهواتف */
+            margin: 20px 0;
         }
 
         .container:hover {
@@ -47,27 +47,21 @@
             font-size: 26px;
         }
 
-        p { 
-            line-height: 1.6; 
-            color: #ccc; 
+        .intro-text {
+            line-height: 1.6;
+            color: #fff;
             font-size: 15px;
+            background: rgba(212, 175, 55, 0.05);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 3px solid #d4af37;
+            text-align: right;
         }
 
-        /* تنسيق قسم الملخص (ماذا ستتعلم) */
         .features-list {
             text-align: right;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 12px;
-            padding: 15px;
             margin: 20px 0;
-            border-right: 3px solid #d4af37;
-        }
-
-        .features-list h4 {
-            margin-top: 0;
-            color: #d4af37;
-            font-size: 16px;
-            margin-bottom: 10px;
         }
 
         .features-list ul {
@@ -77,18 +71,16 @@
         }
 
         .features-list li {
-            margin-bottom: 8px;
-            font-size: 13px;
+            margin-bottom: 15px;
+            font-size: 14px;
             color: #ddd;
-            display: flex;
-            align-items: flex-start;
-            gap: 8px;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
-        .features-list li::before {
-            content: '✦';
+        .features-list li b {
             color: #d4af37;
+            display: block;
+            margin-bottom: 2px;
         }
 
         .price-tag {
@@ -121,21 +113,12 @@
         .buy-button:hover {
             background: linear-gradient(45deg, #f1c40f, #d4af37);
             transform: scale(1.03);
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
         }
 
         .footer-note {
-            font-size: 13px;
+            font-size: 12px;
             color: #888;
             margin-top: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-        }
-
-        .footer-note::before {
-            content: '⚡';
         }
     </style>
 </head>
@@ -146,20 +129,22 @@
     
     <img src="book.jpg" alt="غلاف كتاب الأداء الراقي">
 
-    <p>حوّل عقلك إلى أقوى سلاح لديك. دليل عملي مُكثّف للسيطرة الذهنية الكاملة وتحويل التوتر إلى طاقة انفجارية.</p>
+    <div class="intro-text">
+        "هذا الدليل ليس كتاباً نظرياً للقراءة، بل هو مخطط عملي صُمم ليُقرأ في 15 دقيقة ويُطبق في أول حصة تدريبية لك. إليك الأسرار التي ستكتشفها في الداخل:"
+    </div>
 
     <div class="features-list">
-        <h4>ماذا ستتعلم في 15 دقيقة؟ ⏱️</h4>
         <ul>
-            <li><b>بروتوكول الـ 48 ساعة:</b> جدولك الزمني المحدد قبل المباراة لقمة الأداء.</li>
-            <li><b>سلاح التنفس المربع:</b> التحكم الفوري في نبضات القلب والهدوء تحت الضغط.</li>
-            <li><b>عقلية الـ 1%:</b> كيف يرى الأبطال الفرص في اللحظات الحاشمة.</li>
-            <li><b>التركيز المطلق:</b> فصل نفسك عن ضجيج الجمهور واستفزاز الخصم تماماً.</li>
+            <li>🏆 <b>الفصل 1: عقلية الـ 1%</b> كيف تعيد برمجة تفكيرك لترى الفرص في اللحظات التي يرى فيها الآخرون الفشل.</li>
+            <li>🧘 <b>تقنية الـ VAKOG</b> السر الذي يستخدمه أبطال النخبة لبرمجة عقولهم الباطنة على النجاح قبل حدوثه.</li>
+            <li>🌪️ <b>سلاح السيطرة على الضغط</b> تمرين "التنفس المربع" العملي لخفض نبضات قلبك والسيطرة على التوتر.</li>
+            <li>🎯 <b>فن الوجود الكامل</b> كيف تدخل في "منطقة التركيز المطلق" وتفصل نفسك عن استفزاز الخصم.</li>
+            <li>⏳ <b>بروتوكول الـ 48 ساعة</b> جدول زمني محدد لما تفعله وتفكر فيه قبل المباراة بيومين لضمان قمة الأداء.</li>
+            <li>🛡️ <b>الثقة الفولاذية</b> كيف تبني إيماناً بنفسك لا يتأثر بخطأ ارتكبته أو خسارة عابرة.</li>
         </ul>
     </div>
 
     <div class="price-tag">
-        <span style="color: #d4af37; font-size: 14px;">السعر الحالي:</span><br>
         <span class="price">500 دج</span>
     </div>
 
@@ -167,7 +152,7 @@
         شراء الكتاب الآن 💳
     </a>
 
-    <p class="footer-note">تسليم فوري (PDF) بعد نجاح الدفع</p>
+    <p class="footer-note">⚡ تسليم فوري (PDF) مباشرة بعد نجاح الدفع</p>
 </div>
 
 </body>
